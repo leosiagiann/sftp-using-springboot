@@ -1,0 +1,15 @@
+server:
+  port: 8888
+
+sftp:
+  client:
+    host: ${SFTP_HOST:localhost}
+    port: ${SFTP_PORT:22}
+    user: ${SFTP_USER:user}
+    password: ${SFTP_PASSWORD:password}
+    basePath: ${SFTP_BASE_PATH:/basePath}
+
+resource:
+  bundle:
+    message:
+      baseName: bundle_messages
